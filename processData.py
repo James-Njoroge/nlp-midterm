@@ -30,12 +30,11 @@ def process_sentences(input_files, output_file, language):
     contextid = 0
     sentid = 0
     
-    if language == 'en':
+    if language == 'english':
         lemmatizer = WordNetLemmatizer()
-    elif language in ['fr','de', 'ru']:
-        dict = {'fr':'french', 'de': 'german', 'ru':'russian'}
-        lemmatizer = SnowballStemmer(dict[language])
-    elif language == 'he':
+    elif language in ['french','german', 'russian']:
+        lemmatizer = SnowballStemmer(language)
+    elif language == 'hebrew':
         lemmatizer = None  # Hebrew lemmatization not supported, will use tokens as is
     else:
         raise ValueError("Unsupported language. Supported languages are 'en', 'fr', 'de', 'he', 'ru'.")
@@ -51,7 +50,7 @@ def process_sentences(input_files, output_file, language):
                 false_sentence = lines[i+1].strip().split('\t')[1]
                 
                 # Extract common words dynamically from both true and false sentences
-                if language == 'he':
+                if language == 'hebrew':
                     all_words = [token.text for token in hebrew_tokenize(true_sentence)] + [token.text for token in hebrew_tokenize(false_sentence)]
                 else:
                     all_words = nltk.word_tokenize(true_sentence, language=language) + nltk.word_tokenize(false_sentence, language=language)
@@ -78,13 +77,13 @@ def process_sentences(input_files, output_file, language):
                     # Lemmatize ROI word from both sentences in the pair
                     if roi_indices:
                         roi_word = true_tokens[roi_indices[0]] if boolean else false_tokens[roi_indices[0]]
-                        if language == 'en':
+                        if language == 'english':
                             pos_tag = nltk.pos_tag([roi_word])[0][1]
                             wordnet_pos = get_wordnet_pos(pos_tag)
                             columns['lemma'] = lemmatizer.lemmatize(roi_word, pos=wordnet_pos)
-                        elif language in ['fr', 'de', 'ru']:
+                        elif language in ['french', 'german', 'russian']:
                             columns['lemma'] = lemmatizer.stem(roi_word)
-                        elif language == 'he':
+                        elif language == 'hebrew':
                             columns['lemma'] = roi_word  # No lemmatization for Hebrew, use the word as is
                     else:
                         columns['lemma'] = ''
@@ -114,7 +113,7 @@ input_files = [
     "fr_evalset/prep_anim.txt",
 ]
 output_file = 'data/fr_data/multi_fr.tsv'
-language = 'fr'  # Specify the language: 'en', 'fr', 'de', 'he', 'ru'
+language = 'french'  # Specify the language: 'en', 'fr', 'de', 'he', 'ru'
 process_sentences(input_files, output_file, language)
 
 print(f"Output saved to {output_file}")
