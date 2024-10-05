@@ -86,26 +86,15 @@ def process_sentences(input_files, output_file):
     df.to_csv(output_file, sep='\t', index=False)
 
 input_files = [
-    "en_evalset/simple_agrmt.txt",
-    "en_evalset/sent_comp.txt",
-    "en_evalset/vp_coord.txt",
-    "en_evalset/long_vp_coord.txt",
-    "en_evalset/subj_rel.txt",
-    "en_evalset/obj_rel_within_anim.txt",
-    "en_evalset/obj_rel_within_inanim.txt",
-    "en_evalset/obj_rel_no_comp_within_anim.txt",
-    "en_evalset/obj_rel_no_comp_within_inanim.txt",
-    "en_evalset/obj_rel_across_anim.txt",
-    "en_evalset/obj_rel_across_inanim.txt",
-    "en_evalset/obj_rel_no_comp_across_anim.txt",
-    "en_evalset/obj_rel_no_comp_across_inanim.txt",
-    "en_evalset/prep_anim.txt",
-    "en_evalset/prep_inanim.txt",
-    "en_evalset/simple_reflexives.txt",
-    "en_evalset/reflexive_sent_comp.txt",
-    "en_evalset/reflexives_across.txt"
+    "ru_evalset/simple_agrmt.txt",
+    "ru_evalset/vp_coord.txt",
+    "ru_evalset/long_vp_coord.txt",
+    "ru_evalset/subj_rel.txt",
+    "ru_evalset/obj_rel_within_anim.txt",
+    "ru_evalset/obj_rel_across_anim.txt",
+    "ru_evalset/prep_anim.txt",
 ]
-output_file = 'data/en_data/mono_en.tsv'
+output_file = 'data/ru_data/multi_ru.tsv'
 process_sentences(input_files, output_file)
 
 print(f"Output saved to {output_file}")
