@@ -4,12 +4,13 @@ from nltk.stem import WordNetLemmatizer, SnowballStemmer
 from nltk.corpus import wordnet
 from collections import Counter
 import nltk
-import os
-from hebrew_tokenizer import tokenize as hebrew_tokenize
-nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('wordnet')
 nltk.download('omw-1.4')
+import os
+from hebrew_tokenizer import tokenize as hebrew_tokenize
+
 
 def get_wordnet_pos(treebank_tag):
     if treebank_tag.startswith('J'):
@@ -31,8 +32,9 @@ def process_sentences(input_files, output_file, language):
     
     if language == 'en':
         lemmatizer = WordNetLemmatizer()
-    elif language in ['fr', 'de', 'ru']:
-        lemmatizer = SnowballStemmer(language)
+    elif language in ['fr','de', 'ru']:
+        dict = {'fr':'french', 'de': 'german', 'ru':'russian'}
+        lemmatizer = SnowballStemmer(dict[language])
     elif language == 'he':
         lemmatizer = None  # Hebrew lemmatization not supported, will use tokens as is
     else:
@@ -103,16 +105,16 @@ def process_sentences(input_files, output_file, language):
     df.to_csv(output_file, sep='\t', index=False)
 
 input_files = [
-    "ru_evalset/simple_agrmt.txt",
-    "ru_evalset/vp_coord.txt",
-    "ru_evalset/long_vp_coord.txt",
-    "ru_evalset/subj_rel.txt",
-    "ru_evalset/obj_rel_within_anim.txt",
-    "ru_evalset/obj_rel_across_anim.txt",
-    "ru_evalset/prep_anim.txt",
+    "fr_evalset/simple_agrmt.txt",
+    "fr_evalset/vp_coord.txt",
+    "fr_evalset/long_vp_coord.txt",
+    "fr_evalset/subj_rel.txt",
+    "fr_evalset/obj_rel_within_anim.txt",
+    "fr_evalset/obj_rel_across_anim.txt",
+    "fr_evalset/prep_anim.txt",
 ]
-output_file = 'data/ru_data/multi_ru.tsv'
-language = 'en'  # Specify the language: 'en', 'fr', 'de', 'he', 'ru'
+output_file = 'data/fr_data/multi_fr.tsv'
+language = 'fr'  # Specify the language: 'en', 'fr', 'de', 'he', 'ru'
 process_sentences(input_files, output_file, language)
 
 print(f"Output saved to {output_file}")
