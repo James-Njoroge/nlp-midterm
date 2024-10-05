@@ -89,7 +89,7 @@ input_files = [
     "en_evalset/simple_agrmt.txt",
     "en_evalset/sent_comp.txt",
     "en_evalset/vp_coord.txt",
-    "en_evalset/vp_coord.txt",
+    "en_evalset/long_vp_coord.txt",
     "en_evalset/subj_rel.txt",
     "en_evalset/obj_rel_within_anim.txt",
     "en_evalset/obj_rel_within_inanim.txt",
@@ -100,12 +100,12 @@ input_files = [
     "en_evalset/obj_rel_no_comp_across_anim.txt",
     "en_evalset/obj_rel_no_comp_across_inanim.txt",
     "en_evalset/prep_anim.txt",
-    "en_evalset/prep_anim.txt",
+    "en_evalset/prep_inanim.txt",
     "en_evalset/simple_reflexives.txt",
     "en_evalset/reflexive_sent_comp.txt",
     "en_evalset/reflexives_across.txt"
 ]
-output_file = 'data/en_data/alldata.tsv'
+output_file = 'data/en_data/mono_en.tsv'
 process_sentences(input_files, output_file)
 
 print(f"Output saved to {output_file}")
