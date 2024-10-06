@@ -1,0 +1,14 @@
+exp: MinimalPair
+
+mode: 
+    - evaluate
+
+models: 
+      hf_masked_model:
+          - google-bert/bert-base-multilingual-cased
+
+datafpath: ../nlp-midterm/data/he_data/multi_he.tsv
+
+predfpath: ../nlp-midterm/predictions/multi/multi_he.tsv
+
+resultsfpath: ../nlp-midterm/results/multi/multi_he.tsv
