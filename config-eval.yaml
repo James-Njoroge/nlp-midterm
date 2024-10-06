@@ -1,0 +1,14 @@
+exp: MinimalPair
+
+mode: 
+    - evaluate
+
+models: 
+      hf_masked_model:
+          - google-bert/bert-base-uncased
+
+datafpath: ../nlp-midterm/data/en_data/mono_en.tsv
+
+predfpath: ../nlp-midterm/predictions/base/mono_en.tsv
+
+resultsfpath: ../nlp-midterm/results/base/mono_en.tsv

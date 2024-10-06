@@ -1,0 +1,281 @@
+sentid	comparison	pairid	contextid	lemma	condition	sentence	ROI
+1	expected	1	1	laugh	simple_agrmt	the author laughs	2
+2	unexpected	1	1	laugh	simple_agrmt	the author laugh	2
+3	expected	2	2	swim	simple_agrmt	the author swims	2
+4	unexpected	2	2	swim	simple_agrmt	the author swim	2
+5	expected	3	3	smile	simple_agrmt	the author smiles	2
+6	unexpected	3	3	smile	simple_agrmt	the author smile	2
+7	expected	4	4	be	simple_agrmt	the author is tall	2
+8	unexpected	4	4	be	simple_agrmt	the author are tall	2
+9	expected	5	5	be	simple_agrmt	the author is old	2
+10	unexpected	5	5	be	simple_agrmt	the author are old	2
+11	expected	6	6	be	simple_agrmt	the author is young	2
+12	unexpected	6	6	be	simple_agrmt	the author are young	2
+13	expected	7	7	be	simple_agrmt	the author is short	2
+14	unexpected	7	7	be	simple_agrmt	the author are short	2
+15	expected	8	8	laugh	simple_agrmt	the pilot laughs	2
+16	unexpected	8	8	laugh	simple_agrmt	the pilot laugh	2
+17	expected	9	9	swim	simple_agrmt	the pilot swims	2
+18	unexpected	9	9	swim	simple_agrmt	the pilot swim	2
+19	expected	10	10	smile	simple_agrmt	the pilot smiles	2
+20	unexpected	10	10	smile	simple_agrmt	the pilot smile	2
+21	expected	11	11	be	simple_agrmt	the pilot is tall	2
+22	unexpected	11	11	be	simple_agrmt	the pilot are tall	2
+23	expected	12	12	be	simple_agrmt	the pilot is old	2
+24	unexpected	12	12	be	simple_agrmt	the pilot are old	2
+25	expected	13	13	be	simple_agrmt	the pilot is young	2
+26	unexpected	13	13	be	simple_agrmt	the pilot are young	2
+27	expected	14	14	be	simple_agrmt	the pilot is short	2
+28	unexpected	14	14	be	simple_agrmt	the pilot are short	2
+29	expected	15	15	laugh	simple_agrmt	the surgeon laughs	2
+30	unexpected	15	15	laugh	simple_agrmt	the surgeon laugh	2
+31	expected	16	16	swim	simple_agrmt	the surgeon swims	2
+32	unexpected	16	16	swim	simple_agrmt	the surgeon swim	2
+33	expected	17	17	smile	simple_agrmt	the surgeon smiles	2
+34	unexpected	17	17	smile	simple_agrmt	the surgeon smile	2
+35	expected	18	18	be	simple_agrmt	the surgeon is tall	2
+36	unexpected	18	18	be	simple_agrmt	the surgeon are tall	2
+37	expected	19	19	be	simple_agrmt	the surgeon is old	2
+38	unexpected	19	19	be	simple_agrmt	the surgeon are old	2
+39	expected	20	20	be	simple_agrmt	the surgeon is young	2
+40	unexpected	20	20	be	simple_agrmt	the surgeon are young	2
+41	expected	21	21	be	simple_agrmt	the surgeon is short	2
+42	unexpected	21	21	be	simple_agrmt	the surgeon are short	2
+43	expected	22	22	laugh	simple_agrmt	the farmer laughs	2
+44	unexpected	22	22	laugh	simple_agrmt	the farmer laugh	2
+45	expected	23	23	swim	simple_agrmt	the farmer swims	2
+46	unexpected	23	23	swim	simple_agrmt	the farmer swim	2
+47	expected	24	24	smile	simple_agrmt	the farmer smiles	2
+48	unexpected	24	24	smile	simple_agrmt	the farmer smile	2
+49	expected	25	25	be	simple_agrmt	the farmer is tall	2
+50	unexpected	25	25	be	simple_agrmt	the farmer are tall	2
+51	expected	26	26	be	simple_agrmt	the farmer is old	2
+52	unexpected	26	26	be	simple_agrmt	the farmer are old	2
+53	expected	27	27	be	simple_agrmt	the farmer is young	2
+54	unexpected	27	27	be	simple_agrmt	the farmer are young	2
+55	expected	28	28	be	simple_agrmt	the farmer is short	2
+56	unexpected	28	28	be	simple_agrmt	the farmer are short	2
+57	expected	29	29	laugh	simple_agrmt	the manager laughs	2
+58	unexpected	29	29	laugh	simple_agrmt	the manager laugh	2
+59	expected	30	30	swim	simple_agrmt	the manager swims	2
+60	unexpected	30	30	swim	simple_agrmt	the manager swim	2
+61	expected	31	31	smile	simple_agrmt	the manager smiles	2
+62	unexpected	31	31	smile	simple_agrmt	the manager smile	2
+63	expected	32	32	be	simple_agrmt	the manager is tall	2
+64	unexpected	32	32	be	simple_agrmt	the manager are tall	2
+65	expected	33	33	be	simple_agrmt	the manager is old	2
+66	unexpected	33	33	be	simple_agrmt	the manager are old	2
+67	expected	34	34	be	simple_agrmt	the manager is young	2
+68	unexpected	34	34	be	simple_agrmt	the manager are young	2
+69	expected	35	35	be	simple_agrmt	the manager is short	2
+70	unexpected	35	35	be	simple_agrmt	the manager are short	2
+71	expected	36	36	laugh	simple_agrmt	the customer laughs	2
+72	unexpected	36	36	laugh	simple_agrmt	the customer laugh	2
+73	expected	37	37	swim	simple_agrmt	the customer swims	2
+74	unexpected	37	37	swim	simple_agrmt	the customer swim	2
+75	expected	38	38	smile	simple_agrmt	the customer smiles	2
+76	unexpected	38	38	smile	simple_agrmt	the customer smile	2
+77	expected	39	39	be	simple_agrmt	the customer is tall	2
+78	unexpected	39	39	be	simple_agrmt	the customer are tall	2
+79	expected	40	40	be	simple_agrmt	the customer is old	2
+80	unexpected	40	40	be	simple_agrmt	the customer are old	2
+81	expected	41	41	be	simple_agrmt	the customer is young	2
+82	unexpected	41	41	be	simple_agrmt	the customer are young	2
+83	expected	42	42	be	simple_agrmt	the customer is short	2
+84	unexpected	42	42	be	simple_agrmt	the customer are short	2
+85	expected	43	43	laugh	simple_agrmt	the officer laughs	2
+86	unexpected	43	43	laugh	simple_agrmt	the officer laugh	2
+87	expected	44	44	swim	simple_agrmt	the officer swims	2
+88	unexpected	44	44	swim	simple_agrmt	the officer swim	2
+89	expected	45	45	smile	simple_agrmt	the officer smiles	2
+90	unexpected	45	45	smile	simple_agrmt	the officer smile	2
+91	expected	46	46	be	simple_agrmt	the officer is tall	2
+92	unexpected	46	46	be	simple_agrmt	the officer are tall	2
+93	expected	47	47	be	simple_agrmt	the officer is old	2
+94	unexpected	47	47	be	simple_agrmt	the officer are old	2
+95	expected	48	48	be	simple_agrmt	the officer is young	2
+96	unexpected	48	48	be	simple_agrmt	the officer are young	2
+97	expected	49	49	be	simple_agrmt	the officer is short	2
+98	unexpected	49	49	be	simple_agrmt	the officer are short	2
+99	expected	50	50	laugh	simple_agrmt	the teacher laughs	2
+100	unexpected	50	50	laugh	simple_agrmt	the teacher laugh	2
+101	expected	51	51	swim	simple_agrmt	the teacher swims	2
+102	unexpected	51	51	swim	simple_agrmt	the teacher swim	2
+103	expected	52	52	smile	simple_agrmt	the teacher smiles	2
+104	unexpected	52	52	smile	simple_agrmt	the teacher smile	2
+105	expected	53	53	be	simple_agrmt	the teacher is tall	2
+106	unexpected	53	53	be	simple_agrmt	the teacher are tall	2
+107	expected	54	54	be	simple_agrmt	the teacher is old	2
+108	unexpected	54	54	be	simple_agrmt	the teacher are old	2
+109	expected	55	55	be	simple_agrmt	the teacher is young	2
+110	unexpected	55	55	be	simple_agrmt	the teacher are young	2
+111	expected	56	56	be	simple_agrmt	the teacher is short	2
+112	unexpected	56	56	be	simple_agrmt	the teacher are short	2
+113	expected	57	57	laugh	simple_agrmt	the senator laughs	2
+114	unexpected	57	57	laugh	simple_agrmt	the senator laugh	2
+115	expected	58	58	swim	simple_agrmt	the senator swims	2
+116	unexpected	58	58	swim	simple_agrmt	the senator swim	2
+117	expected	59	59	smile	simple_agrmt	the senator smiles	2
+118	unexpected	59	59	smile	simple_agrmt	the senator smile	2
+119	expected	60	60	be	simple_agrmt	the senator is tall	2
+120	unexpected	60	60	be	simple_agrmt	the senator are tall	2
+121	expected	61	61	be	simple_agrmt	the senator is old	2
+122	unexpected	61	61	be	simple_agrmt	the senator are old	2
+123	expected	62	62	be	simple_agrmt	the senator is young	2
+124	unexpected	62	62	be	simple_agrmt	the senator are young	2
+125	expected	63	63	be	simple_agrmt	the senator is short	2
+126	unexpected	63	63	be	simple_agrmt	the senator are short	2
+127	expected	64	64	laugh	simple_agrmt	the consultant laughs	2
+128	unexpected	64	64	laugh	simple_agrmt	the consultant laugh	2
+129	expected	65	65	swim	simple_agrmt	the consultant swims	2
+130	unexpected	65	65	swim	simple_agrmt	the consultant swim	2
+131	expected	66	66	smile	simple_agrmt	the consultant smiles	2
+132	unexpected	66	66	smile	simple_agrmt	the consultant smile	2
+133	expected	67	67	be	simple_agrmt	the consultant is tall	2
+134	unexpected	67	67	be	simple_agrmt	the consultant are tall	2
+135	expected	68	68	be	simple_agrmt	the consultant is old	2
+136	unexpected	68	68	be	simple_agrmt	the consultant are old	2
+137	expected	69	69	be	simple_agrmt	the consultant is young	2
+138	unexpected	69	69	be	simple_agrmt	the consultant are young	2
+139	expected	70	70	be	simple_agrmt	the consultant is short	2
+140	unexpected	70	70	be	simple_agrmt	the consultant are short	2
+141	expected	71	71	laugh	simple_agrmt	the authors laugh	2
+142	unexpected	71	71	laugh	simple_agrmt	the authors laughs	2
+143	expected	72	72	swim	simple_agrmt	the authors swim	2
+144	unexpected	72	72	swim	simple_agrmt	the authors swims	2
+145	expected	73	73	smile	simple_agrmt	the authors smile	2
+146	unexpected	73	73	smile	simple_agrmt	the authors smiles	2
+147	expected	74	74	be	simple_agrmt	the authors are tall	2
+148	unexpected	74	74	be	simple_agrmt	the authors is tall	2
+149	expected	75	75	be	simple_agrmt	the authors are old	2
+150	unexpected	75	75	be	simple_agrmt	the authors is old	2
+151	expected	76	76	be	simple_agrmt	the authors are young	2
+152	unexpected	76	76	be	simple_agrmt	the authors is young	2
+153	expected	77	77	be	simple_agrmt	the authors are short	2
+154	unexpected	77	77	be	simple_agrmt	the authors is short	2
+155	expected	78	78	laugh	simple_agrmt	the pilots laugh	2
+156	unexpected	78	78	laugh	simple_agrmt	the pilots laughs	2
+157	expected	79	79	swim	simple_agrmt	the pilots swim	2
+158	unexpected	79	79	swim	simple_agrmt	the pilots swims	2
+159	expected	80	80	smile	simple_agrmt	the pilots smile	2
+160	unexpected	80	80	smile	simple_agrmt	the pilots smiles	2
+161	expected	81	81	be	simple_agrmt	the pilots are tall	2
+162	unexpected	81	81	be	simple_agrmt	the pilots is tall	2
+163	expected	82	82	be	simple_agrmt	the pilots are old	2
+164	unexpected	82	82	be	simple_agrmt	the pilots is old	2
+165	expected	83	83	be	simple_agrmt	the pilots are young	2
+166	unexpected	83	83	be	simple_agrmt	the pilots is young	2
+167	expected	84	84	be	simple_agrmt	the pilots are short	2
+168	unexpected	84	84	be	simple_agrmt	the pilots is short	2
+169	expected	85	85	laugh	simple_agrmt	the surgeons laugh	2
+170	unexpected	85	85	laugh	simple_agrmt	the surgeons laughs	2
+171	expected	86	86	swim	simple_agrmt	the surgeons swim	2
+172	unexpected	86	86	swim	simple_agrmt	the surgeons swims	2
+173	expected	87	87	smile	simple_agrmt	the surgeons smile	2
+174	unexpected	87	87	smile	simple_agrmt	the surgeons smiles	2
+175	expected	88	88	be	simple_agrmt	the surgeons are tall	2
+176	unexpected	88	88	be	simple_agrmt	the surgeons is tall	2
+177	expected	89	89	be	simple_agrmt	the surgeons are old	2
+178	unexpected	89	89	be	simple_agrmt	the surgeons is old	2
+179	expected	90	90	be	simple_agrmt	the surgeons are young	2
+180	unexpected	90	90	be	simple_agrmt	the surgeons is young	2
+181	expected	91	91	be	simple_agrmt	the surgeons are short	2
+182	unexpected	91	91	be	simple_agrmt	the surgeons is short	2
+183	expected	92	92	laugh	simple_agrmt	the farmers laugh	2
+184	unexpected	92	92	laugh	simple_agrmt	the farmers laughs	2
+185	expected	93	93	swim	simple_agrmt	the farmers swim	2
+186	unexpected	93	93	swim	simple_agrmt	the farmers swims	2
+187	expected	94	94	smile	simple_agrmt	the farmers smile	2
+188	unexpected	94	94	smile	simple_agrmt	the farmers smiles	2
+189	expected	95	95	be	simple_agrmt	the farmers are tall	2
+190	unexpected	95	95	be	simple_agrmt	the farmers is tall	2
+191	expected	96	96	be	simple_agrmt	the farmers are old	2
+192	unexpected	96	96	be	simple_agrmt	the farmers is old	2
+193	expected	97	97	be	simple_agrmt	the farmers are young	2
+194	unexpected	97	97	be	simple_agrmt	the farmers is young	2
+195	expected	98	98	be	simple_agrmt	the farmers are short	2
+196	unexpected	98	98	be	simple_agrmt	the farmers is short	2
+197	expected	99	99	laugh	simple_agrmt	the managers laugh	2
+198	unexpected	99	99	laugh	simple_agrmt	the managers laughs	2
+199	expected	100	100	swim	simple_agrmt	the managers swim	2
+200	unexpected	100	100	swim	simple_agrmt	the managers swims	2
+201	expected	101	101	smile	simple_agrmt	the managers smile	2
+202	unexpected	101	101	smile	simple_agrmt	the managers smiles	2
+203	expected	102	102	be	simple_agrmt	the managers are tall	2
+204	unexpected	102	102	be	simple_agrmt	the managers is tall	2
+205	expected	103	103	be	simple_agrmt	the managers are old	2
+206	unexpected	103	103	be	simple_agrmt	the managers is old	2
+207	expected	104	104	be	simple_agrmt	the managers are young	2
+208	unexpected	104	104	be	simple_agrmt	the managers is young	2
+209	expected	105	105	be	simple_agrmt	the managers are short	2
+210	unexpected	105	105	be	simple_agrmt	the managers is short	2
+211	expected	106	106	laugh	simple_agrmt	the customers laugh	2
+212	unexpected	106	106	laugh	simple_agrmt	the customers laughs	2
+213	expected	107	107	swim	simple_agrmt	the customers swim	2
+214	unexpected	107	107	swim	simple_agrmt	the customers swims	2
+215	expected	108	108	smile	simple_agrmt	the customers smile	2
+216	unexpected	108	108	smile	simple_agrmt	the customers smiles	2
+217	expected	109	109	be	simple_agrmt	the customers are tall	2
+218	unexpected	109	109	be	simple_agrmt	the customers is tall	2
+219	expected	110	110	be	simple_agrmt	the customers are old	2
+220	unexpected	110	110	be	simple_agrmt	the customers is old	2
+221	expected	111	111	be	simple_agrmt	the customers are young	2
+222	unexpected	111	111	be	simple_agrmt	the customers is young	2
+223	expected	112	112	be	simple_agrmt	the customers are short	2
+224	unexpected	112	112	be	simple_agrmt	the customers is short	2
+225	expected	113	113	laugh	simple_agrmt	the officers laugh	2
+226	unexpected	113	113	laugh	simple_agrmt	the officers laughs	2
+227	expected	114	114	swim	simple_agrmt	the officers swim	2
+228	unexpected	114	114	swim	simple_agrmt	the officers swims	2
+229	expected	115	115	smile	simple_agrmt	the officers smile	2
+230	unexpected	115	115	smile	simple_agrmt	the officers smiles	2
+231	expected	116	116	be	simple_agrmt	the officers are tall	2
+232	unexpected	116	116	be	simple_agrmt	the officers is tall	2
+233	expected	117	117	be	simple_agrmt	the officers are old	2
+234	unexpected	117	117	be	simple_agrmt	the officers is old	2
+235	expected	118	118	be	simple_agrmt	the officers are young	2
+236	unexpected	118	118	be	simple_agrmt	the officers is young	2
+237	expected	119	119	be	simple_agrmt	the officers are short	2
+238	unexpected	119	119	be	simple_agrmt	the officers is short	2
+239	expected	120	120	laugh	simple_agrmt	the teachers laugh	2
+240	unexpected	120	120	laugh	simple_agrmt	the teachers laughs	2
+241	expected	121	121	swim	simple_agrmt	the teachers swim	2
+242	unexpected	121	121	swim	simple_agrmt	the teachers swims	2
+243	expected	122	122	smile	simple_agrmt	the teachers smile	2
+244	unexpected	122	122	smile	simple_agrmt	the teachers smiles	2
+245	expected	123	123	be	simple_agrmt	the teachers are tall	2
+246	unexpected	123	123	be	simple_agrmt	the teachers is tall	2
+247	expected	124	124	be	simple_agrmt	the teachers are old	2
+248	unexpected	124	124	be	simple_agrmt	the teachers is old	2
+249	expected	125	125	be	simple_agrmt	the teachers are young	2
+250	unexpected	125	125	be	simple_agrmt	the teachers is young	2
+251	expected	126	126	be	simple_agrmt	the teachers are short	2
+252	unexpected	126	126	be	simple_agrmt	the teachers is short	2
+253	expected	127	127	laugh	simple_agrmt	the senators laugh	2
+254	unexpected	127	127	laugh	simple_agrmt	the senators laughs	2
+255	expected	128	128	swim	simple_agrmt	the senators swim	2
+256	unexpected	128	128	swim	simple_agrmt	the senators swims	2
+257	expected	129	129	smile	simple_agrmt	the senators smile	2
+258	unexpected	129	129	smile	simple_agrmt	the senators smiles	2
+259	expected	130	130	be	simple_agrmt	the senators are tall	2
+260	unexpected	130	130	be	simple_agrmt	the senators is tall	2
+261	expected	131	131	be	simple_agrmt	the senators are old	2
+262	unexpected	131	131	be	simple_agrmt	the senators is old	2
+263	expected	132	132	be	simple_agrmt	the senators are young	2
+264	unexpected	132	132	be	simple_agrmt	the senators is young	2
+265	expected	133	133	be	simple_agrmt	the senators are short	2
+266	unexpected	133	133	be	simple_agrmt	the senators is short	2
+267	expected	134	134	laugh	simple_agrmt	the consultants laugh	2
+268	unexpected	134	134	laugh	simple_agrmt	the consultants laughs	2
+269	expected	135	135	swim	simple_agrmt	the consultants swim	2
+270	unexpected	135	135	swim	simple_agrmt	the consultants swims	2
+271	expected	136	136	smile	simple_agrmt	the consultants smile	2
+272	unexpected	136	136	smile	simple_agrmt	the consultants smiles	2
+273	expected	137	137	be	simple_agrmt	the consultants are tall	2
+274	unexpected	137	137	be	simple_agrmt	the consultants is tall	2
+275	expected	138	138	be	simple_agrmt	the consultants are old	2
+276	unexpected	138	138	be	simple_agrmt	the consultants is old	2
+277	expected	139	139	be	simple_agrmt	the consultants are young	2
+278	unexpected	139	139	be	simple_agrmt	the consultants is young	2
+279	expected	140	140	be	simple_agrmt	the consultants are short	2
+280	unexpected	140	140	be	simple_agrmt	the consultants is short	2

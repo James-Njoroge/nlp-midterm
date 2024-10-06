@@ -4,13 +4,12 @@ from nltk.stem import WordNetLemmatizer, SnowballStemmer
 from nltk.corpus import wordnet
 from collections import Counter
 import nltk
-nltk.download('punkt_tab')
+import os
+from hebrew_tokenizer import tokenize as hebrew_tokenize
+nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('wordnet')
 nltk.download('omw-1.4')
-import os
-from hebrew_tokenizer import tokenize as hebrew_tokenize
-
 
 def get_wordnet_pos(treebank_tag):
     if treebank_tag.startswith('J'):
@@ -32,26 +31,43 @@ def process_sentences(input_files, output_file, language):
     
     if language == 'english':
         lemmatizer = WordNetLemmatizer()
-    elif language in ['french','german', 'russian']:
+    elif language in ['french', 'german', 'russian']:
         lemmatizer = SnowballStemmer(language)
     elif language == 'hebrew':
         lemmatizer = None  # Hebrew lemmatization not supported, will use tokens as is
     else:
-        raise ValueError("Unsupported language. Supported languages are 'en', 'fr', 'de', 'he', 'ru'.")
+        raise ValueError("Unsupported language. Supported languages are 'english', 'french', 'german', 'hebrew', 'russian'.")
     
     for input_file in input_files:
         condition = os.path.splitext(os.path.basename(input_file))[0]
         condition = condition.replace('_anim', '').replace('_inanim', '')
         
-        with open(input_file, 'r') as file:
+        with open(input_file, 'r', encoding='utf-8', errors='replace') as file:
             lines = file.readlines()
             for i in range(0, len(lines), 2):
-                true_sentence = lines[i].strip().split('\t')[1]
-                false_sentence = lines[i+1].strip().split('\t')[1]
+                if i + 1 >= len(lines):
+                    # Skip if there is no corresponding false sentence
+                    break
+                true_sentence_parts = lines[i].strip().split('\t')
+                false_sentence_parts = lines[i + 1].strip().split('\t')
+                
+                if len(true_sentence_parts) < 2 or len(false_sentence_parts) < 2:
+                    # Skip if the line format is incorrect
+                    continue
+                
+                true_sentence = true_sentence_parts[-1]
+                false_sentence = false_sentence_parts[-1]
+                
+                # Ensure both sentences have the same number of tokens
+                true_tokens = true_sentence.split()
+                false_tokens = false_sentence.split()
+                if len(true_tokens) != len(false_tokens):
+                    # Skip if the number of tokens does not match
+                    continue
                 
                 # Extract common words dynamically from both true and false sentences
                 if language == 'hebrew':
-                    all_words = [token.text for token in hebrew_tokenize(true_sentence)] + [token.text for token in hebrew_tokenize(false_sentence)]
+                    all_words = [token[1] for token in hebrew_tokenize(true_sentence)] + [token[1] for token in hebrew_tokenize(false_sentence)]
                 else:
                     all_words = nltk.word_tokenize(true_sentence, language=language) + nltk.word_tokenize(false_sentence, language=language)
                 word_freq = Counter(all_words)
@@ -59,8 +75,6 @@ def process_sentences(input_files, output_file, language):
                 pattern = re.compile(r'\b(' + '|'.join(re.escape(word) for word in common_words) + r')\b')
                 
                 # Find ROI
-                true_tokens = true_sentence.split()
-                false_tokens = false_sentence.split()
                 roi = []
                 for k in range(len(true_tokens)):
                     if true_tokens[k] != false_tokens[k]:
@@ -104,16 +118,16 @@ def process_sentences(input_files, output_file, language):
     df.to_csv(output_file, sep='\t', index=False)
 
 input_files = [
-    "fr_evalset/simple_agrmt.txt",
-    "fr_evalset/vp_coord.txt",
-    "fr_evalset/long_vp_coord.txt",
-    "fr_evalset/subj_rel.txt",
-    "fr_evalset/obj_rel_within_anim.txt",
-    "fr_evalset/obj_rel_across_anim.txt",
-    "fr_evalset/prep_anim.txt",
+    "ru_evalset/simple_agrmt.txt",
+    "ru_evalset/vp_coord.txt",
+    "ru_evalset/long_vp_coord.txt",
+    "ru_evalset/subj_rel.txt",
+    "ru_evalset/obj_rel_within_anim.txt",
+    "ru_evalset/obj_rel_across_anim.txt",
+    "ru_evalset/prep_anim.txt",
 ]
-output_file = 'data/fr_data/multi_fr.tsv'
-language = 'french'  # Specify the language: 'en', 'fr', 'de', 'he', 'ru'
+output_file = 'data/ru_data/multi_ru.tsv'
+language = 'russian'  # Specify the language: 'en', 'fr', 'de', 'he', 'ru'
 process_sentences(input_files, output_file, language)
 
 print(f"Output saved to {output_file}")
