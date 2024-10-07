@@ -7,8 +7,8 @@ models:
       hf_masked_model:
           - google-bert/bert-base-multilingual-cased
 
-datafpath: ../nlp-midterm/data/fr_data/multi_fr.tsv
+datafpath: ../nlp/nlp-midterm/data/fr_data/multi_fr.tsv
 
-predfpath: ../nlp-midterm/predictions/multi/multi_fr.tsv
+predfpath: ../nlp/nlp-midterm/predictions/multi/multi_fr.tsv
 
-resultsfpath: ../nlp-midterm/results/multi/multi_fr.tsv
+resultsfpath: ../nlp/nlp-midterm/results/multi/multi_fr.tsv

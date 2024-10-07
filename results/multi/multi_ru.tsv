@@ -1,0 +1,6 @@
+	model	condition	microdiff	macrodiff	acc
+0	google-bert/bert-base-multilingual-cased	long_vp_coord	1.9265063470193289	1.9265063470193289	0.556
+1	google-bert/bert-base-multilingual-cased	obj_rel_within	-0.12290288962707348	-0.12290288962707348	0.2537521274949714
+2	google-bert/bert-base-multilingual-cased	prep	0.6377564543294836	0.6377564543294836	0.6814625850340136
+3	google-bert/bert-base-multilingual-cased	simple_agrmt	1.103720614938287	1.103720614938287	0.7857142857142857
+4	google-bert/bert-base-multilingual-cased	vp_coord	1.6301505434522339	1.6301505434522339	0.789795918367347
