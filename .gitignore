@@ -1,3 +1,11 @@
+data/
+de_evalset/
+en_evalset/
+fr_evalset/
+he_evalset/
+predictions/
+ru_evalset/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

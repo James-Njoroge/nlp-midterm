@@ -12,3 +12,5 @@ datafpath: ../nlp/nlp-midterm/data/en_data/mono_en.tsv
 predfpath: ../nlp/nlp-midterm/predictions/base/mono_en.tsv
 
 resultsfpath: ../nlp/nlp-midterm/results/base/mono_en.tsv
+
+batchSize: 16

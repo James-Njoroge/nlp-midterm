@@ -12,3 +12,5 @@ datafpath: ../nlp/nlp-midterm/data/en_data/multi_en.tsv
 predfpath: ../nlp/nlp-midterm/predictions/base/multi_en.tsv
 
 resultsfpath: ../nlp/nlp-midterm/results/base/multi_en.tsv
+
+batchSize: 16

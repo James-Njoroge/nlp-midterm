@@ -7,8 +7,10 @@ models:
       hf_masked_model:
           - google-bert/bert-base-multilingual-cased
 
-datafpath: ../nlp/nlp-midterm/data/en_data/multi_en.tsv
+datafpath: ../nlp/nlp-midterm/data/en_data/simple_agr.tsv
 
 predfpath: ../nlp/nlp-midterm/predictions/multi/multi_en.tsv
 
 resultsfpath: ../nlp/nlp-midterm/results/multi/multi_en.tsv
+
+batchSize: 16

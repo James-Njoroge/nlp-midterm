@@ -1,7 +1,7 @@
 exp: MinimalPair
 
 mode: 
-    - evaluate
+    - analyze
 
 models: 
       hf_masked_model:
@@ -12,3 +12,5 @@ datafpath: ../nlp/nlp-midterm/data/he_data/multi_he.tsv
 predfpath: ../nlp/nlp-midterm/predictions/multi/multi_he.tsv
 
 resultsfpath: ../nlp/nlp-midterm/results/multi/multi_he.tsv
+
+batchSize: 16

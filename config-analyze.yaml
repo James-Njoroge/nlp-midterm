@@ -5,10 +5,15 @@ mode:
 
 models: 
       hf_masked_model:
+          #- google-bert/bert-base-uncased
           - google-bert/bert-base-multilingual-cased
 
-datafpath: ../nlp-midterm/data/ru_data/multi_ru.tsv
+datafpath: ../nlp-midterm/data/en_data/simple_agrmt_en.tsv
 
-predfpath: ../nlp-midterm/predictions/multi/multi_ru.tsv
+predfpath: ../nlp-midterm/predictions/en_data/simple_agrmt_en.tsv
 
-resultsfpath: ../nlp-midterm/results/multi/multi_ru.tsv
+resultsfpath: ../nlp-midterm/results/base/simple_agrmt_en.tsv
+
+batchSize: 100
+
+pred_measure: surp
